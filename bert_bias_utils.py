@@ -78,8 +78,12 @@ def statistics(group1, group2):
     dif = group1.sub(group2, fill_value=0)
 
     SW_stat, SW_p = stats.shapiro(dif)
-    print(SW_stat, SW_p)
-
+    #print(SW_stat, SW_p)
+    print('SW_stat:')
+    print(SW_stat)
+    print('SW_p:')
+    print(SW_p)
+    
     if SW_p >= 0.05:
         print('T-Test:')
         statistic, p = stats.ttest_rel(group1, group2)
