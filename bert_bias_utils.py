@@ -92,7 +92,8 @@ def statistics(group1, group2):
         statistic, p = stats.wilcoxon(group1, group2)
 
     print('Statistic: {}, p: {}'.format(statistic, p))
-
+    
+    print(np.sqrt(len(group1))
     effect_size = statistic / np.sqrt(len(group1))
     print('effect size r: {}'.format(effect_size))
 
