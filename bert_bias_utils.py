@@ -66,6 +66,7 @@ def attention_mask_creator(input_ids):
 def calculo_asociaciones(group1):
     print('Group 1:')
     print(group1.describe())
+    
     return
 
 def statistics(group1, group2):
