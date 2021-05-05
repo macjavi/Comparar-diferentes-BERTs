@@ -63,7 +63,7 @@ def attention_mask_creator(input_ids):
         attention_masks.append(segments_ids)
     return torch.tensor(attention_masks)
 
-def calculo_asociaciones(group1):
+def asociaciones(group1):
     print('Group 1:')
     print(group1.describe())
     
