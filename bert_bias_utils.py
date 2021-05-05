@@ -63,6 +63,10 @@ def attention_mask_creator(input_ids):
         attention_masks.append(segments_ids)
     return torch.tensor(attention_masks)
 
+def calculo_asociaciones(group1):
+    print('Group 1:')
+    print(group1.describe())
+    return
 
 def statistics(group1, group2):
     """take 2 groups of paired samples and compute either a paired samples t-test or
