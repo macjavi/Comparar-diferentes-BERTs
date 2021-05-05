@@ -93,8 +93,8 @@ def statistics(group1, group2):
 
     print('Statistic: {}, p: {}'.format(statistic, p))
     
-    print('Denominador')
-    print(np.sqrt(len(group1))
+    #print('Denominador')
+    #print(np.sqrt(len(group1))
     effect_size = statistic / np.sqrt(len(group1))
     print('effect size r: {}'.format(effect_size))
 
