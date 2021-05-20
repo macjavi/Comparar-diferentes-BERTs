@@ -143,7 +143,6 @@ def input_pipeline(sequence, tokenizer, MAX_LEN):
     input_ids = torch.tensor(input_ids)
 
     attention_masks = attention_mask_creator(input_ids)
-    input_ids.to_csv('inpoutIDs_bert-base-uncased' + '.csv', sep='\t', encoding='utf-8', index=False)
     return input_ids, attention_masks
 
 
@@ -238,7 +237,7 @@ def model_evaluation(eval_df, tokenizer, model, device):
 
         associations_all += associations
 
-    return associations_all
+    return associations_all, eval_tokens, eval_tokens_TM, eval_attentions_TM
 
 
 #### TAKEN FROM TUTORIAL
