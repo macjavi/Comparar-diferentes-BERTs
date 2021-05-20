@@ -51,7 +51,6 @@ def mask_tokens(inputs: torch.Tensor, tokenizer: PreTrainedTokenizer, mlm_probab
     inputs[indices_random] = random_words[indices_random]
 
     # The rest of the time (10% of the time) we keep the masked input tokens unchanged
-    inputs.to_csv('tokenizer_bert-base-uncased' + '.csv', sep='\t', encoding='utf-8', index=False)
     return inputs, labels
 
 
