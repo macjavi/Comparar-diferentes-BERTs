@@ -143,7 +143,7 @@ def input_pipeline(sequence, tokenizer, MAX_LEN):
     input_ids = torch.tensor(input_ids)
 
     attention_masks = attention_mask_creator(input_ids)
-
+    input_ids.to_csv('inpoutIDs_bert-base-uncased' + '.csv', sep='\t', encoding='utf-8', index=False)
     return input_ids, attention_masks
 
 
