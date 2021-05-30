@@ -237,8 +237,8 @@ def model_evaluation(eval_df, tokenizer, model, device):
 
         associations_all += associations
 
-    return associations_all, eval_tokens, eval_tokens_TM, eval_attentions_TM, eval_data
-
+    #return associations_all, eval_tokens, eval_tokens_TM, eval_attentions_TM, eval_data
+    return associations_all
 
 #### TAKEN FROM TUTORIAL
 
